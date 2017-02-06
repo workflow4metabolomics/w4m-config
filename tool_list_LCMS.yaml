@@ -227,4 +227,4 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-  - '2066efbafd7c' # v2.0.4 -> Warning: 3.2.2
+  - 'e194eec8e70c' # v2.0.4 -> Warning: 3.2.2
