@@ -36,7 +36,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'caa60dcc217' # v2.0.8
+    - '6caa60dcc217' # v2.0.8
 - name: camera_annotate
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
