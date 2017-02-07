@@ -8,35 +8,35 @@ tools:
 - name: xcms_xcmsset
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '91311aa08cdc' # v2.0.11
+    - '602acc32b549' # v2.1.0
 - name: xcms_group
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '2c1d7df89cf6' # v2.0.6
+    - 'f4dc089f9d19' # v2.1.0
 - name: xcms_retcor
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'bb602a5b8819' # v2.0.8
+    - '20a75ba4345b' # v2.1.0
 - name: xcms_fillpeaks
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '6caa60dcc217' # v2.0.8
+    - '98d0d4b62503' # v2.1.0
 - name: camera_annotate
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -48,11 +48,11 @@ tools:
 - name: xcms_summary
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'cb599006715f' # v1.0.2
+    - 'a2908411620e' # v1.0.3
 - name: camera_combinexsannos
   owner: mmonsoor
   tool_panel_section_id: 'LCMS-preprocessing'
