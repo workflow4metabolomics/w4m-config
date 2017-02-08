@@ -99,11 +99,11 @@ tools:
 - name: lcmsmatching
   owner: prog
   tool_panel_section_id: 'LCMS-annotation'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '253d531a0193' # v3.0
+    - '45e985cd8e9e' # v3.1.7
 
 ## GCMS
 #GCMS-preprocessing
