@@ -93,7 +93,7 @@
 	</div>
 
 	<div class="donemessagelarge">
-		<h1>version 2.5.x</h1>
+		<h1>version 2.6.x</h1>
 		<strong>Publication:</strong> Franck Giacomoni, Gildas Le Corguillé, Misharl Monsoor, Marion Landi, Pierre Pericard, Mélanie Pétéra, Christophe Duperier, Marie Tremblay-Franco, Jean-François Martin, Daniel Jacob, Sophie Goulitquer, Etienne A. Thévenot and Christophe Caron (2014). <strong>Workflow4Metabolomics: A collaborative research infrastructure for computational metabolomics</strong>. Bioinformatics  <a href="http://bioinformatics.oxfordjournals.org/content/early/2014/12/18/bioinformatics.btu813" target="_blank">doi:10.1093/bioinformatics/btu813</a><br/><br/>
 	    <b>Help and support: <a href="mailto:support@workflow4metabolomics.org">support@workflow4metabolomics.org</a></b>
 	</div>
@@ -102,25 +102,16 @@
 	<!--<div class="warningmessagelarge">
 		<h2>Information/Warning</h2>
 		<ul>
-			<li>18-05-16: We are presently facing an issue around the job submission. For you, it appears with this message: "The cluster DRM system terminated this job". We are investigating but meanwhile you can resubmit your jobs while crossing your fingers.</li>
-			<li>08/06/2015 - W4M is now in maintenance. You can face some access problems during reboots.</li>
-	       	<li>29/07/2014 - Some scripts can be disrupted due to problems around R</li>
-			<li>22/01/2015 - Maintenance: W4M will be stopped at <blink><strong><font color="red">17:00 TODAY</font></strong></blink> for an expected duration of 1 hour (Update of Galaxy: security and features)</li>
-			<li> 10/02/2015 - W4M is now in maintenance. You can face some access problems since we are rebooting it. </li>
-			<li> 10/02/2015 - You may encounter some problems when re-running former datasets, the tools (specially around xcms and CAMERA) became obsolete. You can run new one in the tools panel. We will try to fix this issue as soon as possible. </li>
+			<li></li>			
 		</ul>
 	</div>-->
 
-	<!--<div class="infomessagelarge">
+	<div class="infomessagelarge">
 		<h2>Latest news</h2>
 		<ul>
-			<li>08/06/2015 - Workflow4Metabolomics v2.1 (2.0 phase 2) starts today - Check the changelog section below</li>
-			<li>01/06/2015 - Workflow4Metabolomics v2.0 starts today - Check the changelog section below</li>
-			<li>01/06/2015 - The W4M 2.0 release is presented in the June 2015 MetaboNews Spotlight <a href="http://www.metabonews.ca/Jun2015/MetaboNews_Jun2015.htm#spotlight" target="_blank">[link]</a></li>
-			<li>21/09/2015 - <a href="http://workflow4metabolomics.org/training/W4Mcourse2015" target="_blank">Ecole-chercheurs</a> : Traitement des données métabolomiques sur l'infrastructure online Workflow4Metabolomics (21-25 Sept. 2015) [in French] / Roscoff, France</li>
-			<li>19/12/2014 - W4M publication in Bioinformatics is now <a href="http://bioinformatics.oxfordjournals.org/content/early/2014/12/18/bioinformatics.btu813" target="_blank">available</a> - <strong>Workflow4Metabolomics: A collaborative research infrastructure for computational metabolomics</strong></li>
+			<li>09/02/2017 - Workflow4Metabolomics v2.6 - Check the changelog section below</li>
 		</ul>
-	</div>-->
+	</div>
 
 	<div id="W4M">
 		<div id="accordion">
@@ -129,7 +120,18 @@
 				<h3>Changelog</h3>
 
 				<div id="changelog_accordion">
-
+					<h4>2.6.0 - 09/02/2017 </h4>
+                                        <div>
+                                                <ul class="changelog">
+                                                        <li><h5>LC-MS</h5>
+                                                                <ul>
+                                                                        <li>IMPROVEMENT - 09/02/17- Preprocessing / xcms.* (2.1.0): xcmsSet and furthermore xcms tools can now deal with individial inputs. xcms.xcmsSet can now be launched in parallele to save compute time. A new tool called "xcms.xcmsSet Merger" can be used to merge several xcms.xcmsSet outputs generated in parallel from single input files.</li>
+									<li>NEW - 09/02/17- Preprocessing / xcms.xcmsSet Merger (1.0.0): This tool will allow you to run one xcms.xcmsSet process per sample in parallel and then to merge all RData images in one. The result is then suitable for xcms.group. You can provide a sampleMetadata table to attribute phenotypic value to your samples.
+									<li>IMPROVEMENT - 09/02/17- Preprocessing / xcms.group and xcms.fillpeaks (2.1.1): Addition of an export for a peaktable (dataMatrix) and a variableMetadata directly from xcms.group and xcms.fillpeaks without have to use CAMERA.annotate </li>
+                                                                </ul>
+                                                        </li>
+                                                </ul>
+                                        </div>
 					<h4>2.5.1 - 09/03/2016 </h4>
 					<div>
 						<ul class="changelog">
