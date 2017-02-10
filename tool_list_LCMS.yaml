@@ -12,7 +12,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '25938ab94950' # v2.1.0
+    - '329cfa3d2be6' # v2.1.0
 - name: xcms_merge
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -20,7 +20,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '9063eaae5112' # v1.0.0
+    - 'f15c64ecf378' # v1.0.0
 - name: xcms_group
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -28,7 +28,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'ab5093759cb3' # v2.1.1
+    - '7f667b64d5a5' # v2.1.0
 - name: xcms_retcor
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -36,7 +36,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '08768644f9c4' # v2.1.0
+    - '51b9f9452794' # v2.1.0
 - name: xcms_fillpeaks
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -44,15 +44,15 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '99094333f540' # v2.1.1
+    - 'a6938c381d4e' # v2.1.0
 - name: camera_annotate
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '9c037181588e' # v2.1.5
+    - '230f0bc9e792' # v2.2.0
 - name: xcms_summary
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -60,15 +60,15 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'c3646d3f1750' # v1.0.3
+    - 'abb66f65f1af' # v1.0.3
 - name: camera_combinexsannos
   owner: mmonsoor
   tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'c23aa0cbc550' # v2.0.4
+    - '972152941964' # v2.0.6
 #- name: hca
 #  owner: lecorguille
 #  tool_panel_section_id: 'LCMS-statistical_analysis'
