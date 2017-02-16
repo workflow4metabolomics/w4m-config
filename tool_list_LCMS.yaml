@@ -52,7 +52,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '230f0bc9e792' # v2.2.0
+    - '04e32b9a5486' # v2.2.0
 - name: xcms_summary
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -68,7 +68,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '972152941964' # v2.0.6
+    - 'd67f7aa847bf' # v2.0.6
 #- name: hca
 #  owner: lecorguille
 #  tool_panel_section_id: 'LCMS-statistical_analysis'
@@ -91,11 +91,11 @@ tools:
 - name: probmetab
   owner: mmonsoor
   tool_panel_section_id: 'LCMS-annotation'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '3a9914b37f2f' # v1.0.1
+    - 'f24b9c360a60' # v1.0.1
 - name: lcmsmatching
   owner: prog
   tool_panel_section_id: 'LCMS-annotation'
