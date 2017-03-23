@@ -12,7 +12,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '329cfa3d2be6' # v2.1.0
+    - '626d3db664ef' # v2.1.0
 - name: xcms_merge
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -20,7 +20,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'f15c64ecf378' # v1.0.0
+    - '62b66b39a268' # v1.0.0
 - name: xcms_group
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -28,7 +28,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '7f667b64d5a5' # v2.1.0
+    - 'b41669de74ae' # v2.1.0
 - name: xcms_retcor
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -36,7 +36,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - '51b9f9452794' # v2.1.0
+    - 'd45e409406ed' # v2.1.0
 - name: xcms_fillpeaks
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -44,7 +44,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'a6938c381d4e' # v2.1.0
+    - '9ca8133a2b9f' # v2.1.0
 - name: camera_annotate
   owner: lecorguille
   tool_panel_section_id: 'LCMS-preprocessing'
@@ -60,7 +60,7 @@ tools:
   install_tool_dependencies: False
   install_resolver_dependencies: True
   revisions:
-    - 'abb66f65f1af' # v1.0.3
+    - '5cc59ee748b6' # v1.0.3
 - name: camera_combinexsannos
   owner: mmonsoor
   tool_panel_section_id: 'LCMS-preprocessing'
