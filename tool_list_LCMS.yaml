@@ -104,6 +104,11 @@ tools:
   install_resolver_dependencies: True
   revisions:
     - '45e985cd8e9e' # v3.1.7
+  github:
+      repos: https://github.com/workflow4metabolomics/lcmsmatching
+      prod: master
+      dev: develop
+  xml: lcmsmatching.xml
 
 ## GCMS
 #GCMS-preprocessing
