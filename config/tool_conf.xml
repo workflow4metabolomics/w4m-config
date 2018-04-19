@@ -1,87 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
 <toolbox>
   <!--<section id="getext" name="Get Data">-->
-    <tool file="data_source/upload.xml" />
- <!--</section>-->
+  <tool file="data_source/upload.xml" />
+  <!--</section>-->
 
+  <label id="label_preprocessing" text="PREPROCESSING" />
+  <section id="preprocessing_LCMS" name="LCMS" version="" />
+  <section id="preprocessing_FIAMS" name="FIAMS" version="" />
+  <section id="preprocessing_GCMS" name="GCMS" version="" />
+  <section id="preprocessing_NMR" name="NMR" version="" />
 
-  <!-- WORKFLOW 4	LCMS TOOLS -->
+  <label id="label_normalization_quality_control" text="NORMALIZATION / QUALITY CONTROL" />
+  <section id="normalization_quality_control_LCMS_FIAMS" name="LCMS / FIAMS" version="" />
+  <section id="normalization_quality_control_ALL" name="ALL" version="" />
 
-  <label id="label_LCMS_workflow" text="LC-MS" />
+  <label id="label_statistics" text="STATISTICS" />
+  <section id="statistics_ALL" name="ALL" version="" />
 
-  <section id="LCMS-formatconversion" name="Format Conversion" version="" />
-  <section id="LCMS-preprocessing" name="Preprocessing" version="" /> 
-  <section id="LCMS-normalisation" name="Normalisation" version="" />
-  <section id="LCMS-quality_control" name="Quality Control" version="" />
-  <section id="LCMS-statistical_analysis" name="Statistical Analysis" version="" />
-  <section id="LCMS-annotation" name="Annotation" version="" />
+  <label id="label_annotation" text="ANNOTATION" />
+  <section id="annotation_LCMS_FIAMS" name="LCMS / FIAMS" version="" />
+  <section id="annotation_LCMS" name="LCMS" version="" />
+  <section id="annotation_GCMS" name="GCMS" version="" />
+  <section id="annotation_NMR" name="NMR" version="" />
 
+  <label id="label_data_handling" text="DATA HANDLING" />
+  <section id="data_handling_ALL" name="ALL" version="" />
 
-  <!-- WORKFLOW 4	GCMS TOOLS -->
-
-  <label id="label_GCMS_workflow" text="GC-MS" />
-
-  <section id="GCMS-formatconversion" name="Format Conversion" version="" />
-  <section id="GCMS-preprocessing" name="Preprocessing" version="" /> 
-  <section id="GCMS-normalisation" name="Normalisation" version="" />
-  <section id="GCMS-quality_control" name="Quality Control" version="" />
-  <section id="GCMS-statistical_analysis" name="Statistical Analysis" version="" />
-  <section id="GCMS-annotation" name="Annotation" version="" />
-
-  <!-- WORKFLOW 4 NMR TOOLS -->
-
-  <label id="label_NMR_workflow" text="NMR" />
-
-  <section id="NMR-formatconversion" name="Format Conversion" version="" />
-  <section id="NMR-preprocessing" name="Preprocessing" version="" /> 
-  <section id="NMR-normalisation" name="Normalisation" version="" />
-  <section id="NMR-quality_control" name="Quality Control" version="" />
-  <section id="NMR-statistical_analysis" name="Statistical Analysis" version="" />
-  <section id="NMR-annotation" name="Annotation" version="" />
-
-
-
-  <!-- WORKFLOW 4 UTILS TOOLS -->
-
-  <label id="label_UTILS" text="UTILS TOOLS" />
-
-  <section id="W4M-Data-Handling" name="Data Handling" version="" />
-
-
-
-  <!-- WORKFLOW 4 LCMS TOOLS -->
-
-  <!--<label id="label_LCMS_workflow-dev" text="LC-MS Beta" />-->
-
-  <section id="LCMS-dev-formatconversion" name="Format Conversion" version="" />
-  <section id="LCMS-dev-preprocessing" name="Preprocessing" version="" /> 
-  <section id="LCMS-dev-ormalisation" name="Normalisation" version="" />
-  <section id="LCMS-dev-quality_control" name="Quality Control" version="" />
-  <section id="LCMS-dev-statistical_analysis" name="Statistical Analysis" version="" />
-  <section id="LCMS-dev-annotation" name="Annotation" version="" />
-
-
-  <!-- WORKFLOW 4 GCMS TOOLS -->
-
-  <!--<label id="label_GCMS_workflow-dev" text="GC-MS Beta" />-->
-
-  <section id="GCMS-dev-formatconversion" name="Format Conversion" version="" />
-  <section id="GCMS-dev-preprocessing" name="Preprocessing" version="" /> 
-  <section id="GCMS-dev-normalisation" name="Normalisation" version="" />
-  <section id="GCMS-dev-quality_control" name="Quality Control" version="" />
-  <section id="GCMS-dev-statistical_analysis" name="Statistical Analysis" version="" />
-  <section id="GCMS-dev-annotation" name="Annotation" version="" />
-
-  <!-- WORKFLOW 4 NMR TOOLS -->
-
-  <!--<label id="label_NMR_workflow-dev" text="NMR Beta" />-->
-
-  <section id="NMR-dev-formatconversion" name="Format Conversion" version="" />
-  <section id="NMR-dev-preprocessing" name="Preprocessing" version="" /> 
-  <section id="NMR-dev-normalisation" name="Normalisation" version="" />
-  <section id="NMR-dev-quality_control" name="Quality Control" version="" />
-  <section id="NMR-dev-statistical_analysis" name="Statistical Analysis" version="" />
-  <section id="NMR-dev-annotation" name="Annotation" version="" />
+  <label id="label_contribution" text="CONTRIBUTION" />
+  <section id="contribution_ALL" name="ALL" version="" />
 
 
 <!-- COMMON TOOLS -->
@@ -124,6 +70,6 @@
     <tool file="plotting/bar_chart.xml" />
     <tool file="plotting/boxplot.xml" />
   </section>
- 
+
   <section id="Old-Tools" name="Deprecared Tools" version=""/>
 </toolbox>

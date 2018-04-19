@@ -1,243 +1,219 @@
-# This is just a sample file. For a fully documented version of this file, see
+# For a fully documented version of this file, see
 # https://github.com/galaxyproject/ansible-galaxy-tools/blob/master/files/tool_list.yaml.sample
 api_key: admin
 galaxy_instance: http://127.0.0.1:8080/
+install_repository_dependencies: true
+install_resolver_dependencies: true
+install_tool_dependencies: false
+
 tools:
+# label_preprocessing
 ## LCMS
-#LCMS-preprocessing
 - name: xcms_xcmsset
   owner: lecorguille
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - '329cfa3d2be6' # v2.1.0
+    - '15646e937936' # v2.1.0
 - name: xcms_merge
   owner: lecorguille
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - 'f15c64ecf378' # v1.0.0
+    - '47f9b1fd5ce6' # v1.0.0
 - name: xcms_group
   owner: lecorguille
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - '7f667b64d5a5' # v2.1.0
+    - '9e45e1c404a4' # v2.1.0
 - name: xcms_retcor
   owner: lecorguille
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - '51b9f9452794' # v2.1.0
+    - '4bfef820569b' # v2.1.0
 - name: xcms_fillpeaks
   owner: lecorguille
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - 'a6938c381d4e' # v2.1.0
+    - 'de0d85537ee3' # v2.1.0
 - name: camera_annotate
   owner: lecorguille
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - '04e32b9a5486' # v2.2.0
+    - '1c30ff90f3ae' # v2.2.0
 - name: xcms_summary
   owner: lecorguille
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - 'abb66f65f1af' # v1.0.3
+    - '27e7da5f6848' # v1.0.3
 - name: camera_combinexsannos
   owner: mmonsoor
-  tool_panel_section_id: 'LCMS-preprocessing'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
-    - 'd67f7aa847bf' # v2.0.6
-#- name: hca
-#  owner: lecorguille
-#  tool_panel_section_id: 'LCMS-statistical_analysis'
-#  tool_shed_url: https://toolshed.g2.bx.psu.edu
-#  install_tool_dependencies: False
-#  install_resolver_dependencies: True
-#LCMS-statistical_analysis
+    - '198b035d4848' # v2.0.6
 
-#LCMS-quality_control
+## FIAMS
+- name: profia
+  owner: ethevenot
+  tool_panel_section_id: 'preprocessing_FIAMS'
+  revisions:
+    - '4753e64cf694' # v3.0.4
+
+## GCMS
+- name: metams_rungc
+  owner: yguitton
+  tool_panel_section_id: 'preprocessing_GCMS'
+  revisions:
+    - '8e1b99a7d733' # v2.1
+
+## NMR
+- name: nmr_preprocessing
+  owner: marie-tremblay-metatoul
+  tool_panel_section_id: 'preprocessing_NMR'
+  revisions:
+    - 'cbea5e9fd0b4' # v3.1.0
+- name: nmr_alignment
+  owner: marie-tremblay-metatoul
+  tool_panel_section_id: 'preprocessing_NMR'
+  revisions:
+    - 'f3ec6799c435' # v2.0.3
+- name: nmr_bucketing
+  owner: marie-tremblay-metatoul
+  tool_panel_section_id: 'preprocessing_NMR'
+  revisions:
+    - 'ed40bbda7959' # v1.0.3
+
+# label_normalization_quality_control
+## LCMS_FIAMS
+- name: batchcorrection
+  owner: melpetera
+  tool_panel_section_id: 'normalization_quality_control_LCMS_FIAMS'
+  revisions:
+    - '73892ef177e3' # v2.1.2
+
+## ALL
+- name: normalization
+  owner: marie-tremblay-metatoul
+  tool_panel_section_id: 'normalization_quality_control_ALL'
+  revisions:
+    - '3cd762aac7a4' # v1.0.3
+- name: transformation
+  owner: ethevenot
+  tool_panel_section_id: 'normalization_quality_control_ALL'
+  revisions:
+    - '0ccfc3e15710' # v2.2.0
 - name: qualitymetrics
   owner: ethevenot
-  tool_panel_section_id: 'LCMS-quality_control'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'normalization_quality_control_ALL'
   revisions:
     - '6d3b7b6573d8' # v2.2.6
-
-#LCMS-annotation
-- name: probmetab
-  owner: mmonsoor
-  tool_panel_section_id: 'LCMS-annotation'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+- name: withinvariation
+  owner: yguitton
+  tool_panel_section_id: 'normalization_quality_control_ALL'
   revisions:
-    - 'f24b9c360a60' # v1.0.1
+    - '5086ad0c0992' # v0.5.0
+
+# label_statistics
+## ALL
+- name: univariate
+  owner: ethevenot
+  tool_panel_section_id: 'statistics_ALL'
+  revisions:
+    - '140290de7986' # v2.2.0
+- name: multivariate
+  owner: ethevenot
+  tool_panel_section_id: 'statistics_ALL'
+  revisions:
+    - 'e91de3b04320' # v2.3.8
+- name: anova
+  owner: lecorguille
+  tool_panel_section_id: 'statistics_ALL'
+  revisions:
+    - 'c2be3b890724' # v1.1.4
+- name: biosigner
+  owner: ethevenot
+  tool_panel_section_id: 'statistics_ALL'
+  revisions:
+    - 'fa80bd02055f' # v2.2.7
+
+- name: heatmap
+  owner: ethevenot
+  tool_panel_section_id: 'statistics_ALL'
+  revisions:
+    - 'b1667c118127' # v2.2.2
+
+
+# label_annotation
+## LCMS_FIAMS
+- name: hmdb_ms_search
+  owner: fgiacomoni
+  tool_panel_section_id: 'annotation_LCMS_FIAMS'
+  revisions:
+    - '505956db90c5' # v2016-11-28
+
+- name: lipidmaps_textsearch
+  owner: fgiacomoni
+  tool_panel_section_id: 'annotation_LCMS_FIAMS'
+  revisions:
+    - 'adf9ae010b1c' # v2016-09-27 -> 2/4 tests failed
+
+- name: massbank_ws_searchspectrum
+  owner: fgiacomoni
+  tool_panel_section_id: 'annotation_LCMS_FIAMS'
+  revisions:
+    - '023c380900ef' # v2017-02-06
+
 - name: lcmsmatching
   owner: prog
-  tool_panel_section_id: 'LCMS-annotation'
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'annotation_LCMS_FIAMS'
   revisions:
-    - '45e985cd8e9e' # v3.1.7
+    - 'fb9c0409d85c' # v3.3.1
   github:
       repos: https://github.com/workflow4metabolomics/lcmsmatching
       prod: master
       dev: develop
   xml: lcmsmatching.xml
 
-## GCMS
-#GCMS-preprocessing
-- name: metams_rungc
-  owner: yguitton
-  tool_panel_section_id: 'GCMS-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+## LCMS
+- name: probmetab
+  owner: mmonsoor
+  tool_panel_section_id: 'annotation_LCMS'
   revisions:
-    - '2066efbafd7c' # v1.0.1 -> Warning: R 3.2.2
+    - '52b222a626b0' # v1.1.0
+
+## GCMS
+- name: golm_ws_lib_search
+  owner: fgiacomoni
+  tool_panel_section_id: 'annotation_GCMS'
+  revisions:
+    - '11779b6402bc' # v2016-12-05
 
 ## NMR
-#NMR-preprocessing
-- name: nmr_bucketing
-  owner: marie-tremblay-metatoul
-  tool_panel_section_id: 'NMR-preprocessing'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
-  revisions:
-    - 'd61f6ceef5d6' # v1.0.3
 
-## COMMON
-#*-normalisation
-- name: batchcorrection
+
+# label_data_handling
+## ALL
+- name: generic_filter
   owner: melpetera
-  tool_panel_section_id: 'LCMS-normalisation'
-  tool_panel_section_id_alts:
-    - 'LCMS-normalisation'
-    - 'GCMS-normalisation'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'data_handling_ALL'
   revisions:
-    - 'f64656ae9ea4' # v2.0.8
-- name: spectral_normalization
-  owner: marie-tremblay-metatoul
-  tool_panel_section_id: 'LCMS-normalisation'
-  tool_panel_section_id_alts:
-    - 'LCMS-normalisation'
-    - 'GCMS-normalisation'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
-  revisions:
-    - 'a5e6499f1b4d' # v1.0.2
-- name: transformation
-  owner: ethevenot
-  tool_panel_section_id: 'LCMS-normalisation'
-  tool_panel_section_id_alts:
-    - 'LCMS-normalisation'
-    - 'GCMS-normalisation'
-    - 'NMR-normalisation'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
-  revisions:
-    - 'd9e05021553c' # v2.2.0 -> Warning: R 3.2.2
+    - '12cf1eed21f4' # v2017.06
 
-#*-statistical_analysis
-- name: anova
-  owner: lecorguille
-  tool_panel_section_id: 'LCMS-statistical_analysis'
-  tool_panel_section_id_alts:
-    - 'LCMS-statistical_analysis'
-    - 'GCMS-statistical_analysis'
-    - 'NMR-statistical_analysis'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+- name: tablemerge
+  owner: melpetera
+  tool_panel_section_id: 'data_handling_ALL'
   revisions:
-    - 'bcd05315efc5' # v1.1.4 -> Warning: R 3.1.2
-- name: heatmap
-  owner: ethevenot
-  tool_panel_section_id: 'LCMS-statistical_analysis'
-  tool_panel_section_id_alts:
-    - 'LCMS-statistical_analysis'
-    - 'GCMS-statistical_analysis'
-    - 'NMR-statistical_analysis'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
-  revisions:
-    - 'db1d80e89156' # v1.0.1 -> Warning: 3.2.2
-- name: univariate
-  owner: ethevenot
-  tool_panel_section_id: 'LCMS-statistical_analysis'
-  tool_panel_section_id_alts:
-    - 'LCMS-statistical_analysis'
-    - 'GCMS-statistical_analysis'
-    - 'NMR-statistical_analysis'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
-  revisions:
-    - '140290de7986' # v2.2.0
-- name: multivariate
-  owner: ethevenot
-  tool_panel_section_id: 'LCMS-statistical_analysis'
-  tool_panel_section_id_alts:
-    - 'LCMS-statistical_analysis'
-    - 'GCMS-statistical_analysis'
-    - 'NMR-statistical_analysis'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
-  revisions:
-    - 'e91de3b04320' # v2.3.8
-- name: biosigner
-  owner: ethevenot
-  tool_panel_section_id: 'LCMS-statistical_analysis'
-  tool_panel_section_id_alts:
-    - 'LCMS-statistical_analysis'
-    - 'GCMS-statistical_analysis'
-    - 'NMR-statistical_analysis'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
-  revisions:
-    - 'b2414be87d4b' # v2.2.6 -> Warning: 3.2.2
+    - '902ab790fb7b' # v1.0.1
 
-
-#W4M-Data-Handling
 - name: checkformat
   owner: ethevenot
-  tool_panel_section_id: 'W4M-Data-Handling'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: False
-  install_resolver_dependencies: True
+  tool_panel_section_id: 'data_handling_ALL'
   revisions:
-  - 'e194eec8e70c' # v2.0.4 -> Warning: 3.2.2
+    - 'b6a6b4cc932a' # v2.0.4
+
+
+# label_contribution
+## ALL
+- name: w4mclassfilter
+  owner: eschen42
+  tool_panel_section_id: 'contribution_ALL'
+  revisions:
+    - '191a720488ce' # v0.98.1 -> Warning: 3.3.1
