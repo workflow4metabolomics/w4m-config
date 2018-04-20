@@ -14,41 +14,81 @@ tools:
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - '15646e937936' # v2.1.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 2.1.0
+      dev: dev
+  xml: tools/xcms_xcmsset/abims_xcms_xcmsSet.xml
 - name: xcms_merge
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - '47f9b1fd5ce6' # v1.0.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 2.1.0
+      dev: dev
+  xml: tools/xcms_merge/xcms_merge.xml
 - name: xcms_group
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - '9e45e1c404a4' # v2.1.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 2.1.0
+      dev: dev
+  xml: tools/xcms_group/abims_xcms_group.xml
 - name: xcms_retcor
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - '4bfef820569b' # v2.1.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 2.1.0
+      dev: dev
+  xml: tools/xcms_retcor/abims_xcms_retcor.xml
 - name: xcms_fillpeaks
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - 'de0d85537ee3' # v2.1.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 2.1.0
+      dev: dev
+  xml: tools/xcms_fillpeaks/abims_xcms_fillPeaks.xml
 - name: camera_annotate
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - '1c30ff90f3ae' # v2.2.0
+  github:
+      repos: https://github.com/workflow4metabolomics/camera
+      prod: 2.2.0
+      dev: dev
+  xml: galaxy/camera_annotate/abims_CAMERA_annotateDiffreport.xml
 - name: xcms_summary
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - '27e7da5f6848' # v1.0.3
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 2.1.0
+      dev: dev
+  xml: tools/xcms_summary/abims_xcms_summary.xml
 - name: camera_combinexsannos
   owner: mmonsoor
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - '198b035d4848' # v2.0.6
+  github:
+      repos: https://github.com/workflow4metabolomics/camera
+      prod: 2.2.0
+      dev: dev
+  xml: galaxy/camera_combinexsannos/abims_CAMERA_combinexsAnnos.xml
 
 ## FIAMS
 - name: profia
@@ -56,6 +96,11 @@ tools:
   tool_panel_section_id: 'preprocessing_FIAMS'
   revisions:
     - '4753e64cf694' # v3.0.4
+  github:
+      repos: https://github.com/workflow4metabolomics/profia
+      prod: v3.1.0
+      dev: dev
+  xml: profia_config.xml
 
 ## GCMS
 - name: metams_rungc
@@ -63,6 +108,11 @@ tools:
   tool_panel_section_id: 'preprocessing_GCMS'
   revisions:
     - '8e1b99a7d733' # v2.1
+  github:
+      repos: https://github.com/workflow4metabolomics/metaMS
+      prod: master
+      dev: dev
+  xml: galaxy/metaMS/metams_runGC.xml
 
 ## NMR
 - name: nmr_preprocessing
@@ -70,16 +120,31 @@ tools:
   tool_panel_section_id: 'preprocessing_NMR'
   revisions:
     - 'cbea5e9fd0b4' # v3.1.0
+  github:
+      repos: https://github.com/workflow4metabolomics/nmr_preprocessing
+      prod: master
+      dev: dev
+  xml: galaxy/nmr_preprocessing/NmrPreprocessing_xml.xml
 - name: nmr_alignment
   owner: marie-tremblay-metatoul
   tool_panel_section_id: 'preprocessing_NMR'
   revisions:
     - 'f3ec6799c435' # v2.0.3
+  github:
+      repos: https://github.com/workflow4metabolomics/nmr_alignment
+      prod: master
+      dev: dev
+  xml: galaxy/nmr_alignement/NmrAlignment_xml.xml
 - name: nmr_bucketing
   owner: marie-tremblay-metatoul
   tool_panel_section_id: 'preprocessing_NMR'
   revisions:
     - 'ed40bbda7959' # v1.0.3
+  github:
+      repos: https://github.com/workflow4metabolomics/nmr_bucketing
+      prod: 2.0.2
+      dev: dev
+  xml: galaxy/nmr_bucketing/NmrBucketing_xml.xml
 
 # label_normalization_quality_control
 ## LCMS_FIAMS
@@ -88,6 +153,11 @@ tools:
   tool_panel_section_id: 'normalization_quality_control_LCMS_FIAMS'
   revisions:
     - '73892ef177e3' # v2.1.2
+  github:
+      repos: https://github.com/workflow4metabolomics/batch_correction
+      prod: v2.1.2
+      dev: master
+  xml: batch_correction.xml
 
 ## ALL
 - name: normalization
@@ -95,16 +165,31 @@ tools:
   tool_panel_section_id: 'normalization_quality_control_ALL'
   revisions:
     - '3cd762aac7a4' # v1.0.3
+  github:
+      repos: https://github.com/workflow4metabolomics/normalization
+      prod: master
+      dev: master
+  xml: normalization/galaxy/normalization/NmrNormalization_xml.xml
 - name: transformation
   owner: ethevenot
   tool_panel_section_id: 'normalization_quality_control_ALL'
   revisions:
     - '0ccfc3e15710' # v2.2.0
+  github:
+      repos: https://github.com/workflow4metabolomics/transformation
+      prod: v2.2.2
+      dev: master
+  xml: transformation_config.xml
 - name: qualitymetrics
   owner: ethevenot
   tool_panel_section_id: 'normalization_quality_control_ALL'
   revisions:
     - '6d3b7b6573d8' # v2.2.6
+  github:
+      repos: https://github.com/workflow4metabolomics/qualitymetrics
+      prod: v2.2.2
+      dev: master
+  xml: qualitymetrics_config.xml
 - name: withinvariation
   owner: yguitton
   tool_panel_section_id: 'normalization_quality_control_ALL'
@@ -118,27 +203,52 @@ tools:
   tool_panel_section_id: 'statistics_ALL'
   revisions:
     - '140290de7986' # v2.2.0
+  github:
+      repos: https://github.com/workflow4metabolomics/univariate
+      prod: v2.2.4
+      dev: dev
+  xml: univariate_config.xml
 - name: multivariate
   owner: ethevenot
   tool_panel_section_id: 'statistics_ALL'
   revisions:
     - 'e91de3b04320' # v2.3.8
+  github:
+      repos: https://github.com/workflow4metabolomics/multivariate
+      prod: v2.3.10
+      dev: dev
+  xml: multivariate_config.xml
 - name: anova
   owner: lecorguille
   tool_panel_section_id: 'statistics_ALL'
   revisions:
     - 'c2be3b890724' # v1.1.4
+  github:
+      repos: https://github.com/workflow4metabolomics/anova
+      prod: master
+      dev: dev
+  xml: galaxy/stat_anova/abims_anova.xml
 - name: biosigner
   owner: ethevenot
   tool_panel_section_id: 'statistics_ALL'
   revisions:
     - 'fa80bd02055f' # v2.2.7
+  github:
+      repos: https://github.com/workflow4metabolomics/biosigner
+      prod: v2.2.7
+      dev: master
+  xml: biosigner_config.xml
 
 - name: heatmap
   owner: ethevenot
   tool_panel_section_id: 'statistics_ALL'
   revisions:
     - 'b1667c118127' # v2.2.2
+  github:
+      repos: https://github.com/workflow4metabolomics/heatmap
+      prod: v2.2.2
+      dev: master
+  xml: heatmap_config.xml
 
 
 # label_annotation
@@ -148,18 +258,33 @@ tools:
   tool_panel_section_id: 'annotation_LCMS_FIAMS'
   revisions:
     - '505956db90c5' # v2016-11-28
+  github:
+      repos: https://github.com/workflow4metabolomics/tool-bank-hmdb
+      prod: release_2016.11.28
+      dev: master
+  xml: wsdl_hmdb.xml
 
 - name: lipidmaps_textsearch
   owner: fgiacomoni
   tool_panel_section_id: 'annotation_LCMS_FIAMS'
   revisions:
     - 'adf9ae010b1c' # v2016-09-27 -> 2/4 tests failed
+  github:
+      repos: https://github.com/workflow4metabolomics/tool-bank-lipidMaps
+      prod: release_2017.04.11
+      dev: master
+  xml: wsdl_lipidmaps.xml
 
 - name: massbank_ws_searchspectrum
   owner: fgiacomoni
   tool_panel_section_id: 'annotation_LCMS_FIAMS'
   revisions:
     - '023c380900ef' # v2017-02-06
+  github:
+      repos: https://github.com/workflow4metabolomics/wrapper-bank-massbank-spectrum_search
+      prod: release_2017-02-06
+      dev: dev_fg
+  xml: massbank_ws_searchspectrum.xml
 
 - name: lcmsmatching
   owner: prog
@@ -178,6 +303,11 @@ tools:
   tool_panel_section_id: 'annotation_LCMS'
   revisions:
     - '52b222a626b0' # v1.1.0
+  github:
+      repos: https://github.com/workflow4metabolomics/probmetab
+      prod: 1.1.0
+      dev: dev
+  xml: galaxy/probmetab/ProbMetab.xml
 
 ## GCMS
 - name: golm_ws_lib_search
@@ -185,6 +315,11 @@ tools:
   tool_panel_section_id: 'annotation_GCMS'
   revisions:
     - '11779b6402bc' # v2016-12-05
+  github:
+      repos: https://github.com/workflow4metabolomics/tool-bank-golm-lib_search
+      prod: release_2016-12-05
+      dev: dev_fg
+  xml: golm_ws_lib_search.xml
 
 ## NMR
 
@@ -196,18 +331,33 @@ tools:
   tool_panel_section_id: 'data_handling_ALL'
   revisions:
     - '12cf1eed21f4' # v2017.06
+  github:
+      repos: https://github.com/workflow4metabolomics/tool-generic_filter
+      prod: phenomenal_2017.12.12
+      dev: dev
+  xml: generic_filter.xml
 
 - name: tablemerge
   owner: melpetera
   tool_panel_section_id: 'data_handling_ALL'
   revisions:
     - '902ab790fb7b' # v1.0.1
+  github:
+      repos: https://github.com/workflow4metabolomics/tool-table_merge
+      prod: release_2016.09.27
+      dev: master
+  xml: tablemerge.xml
 
 - name: checkformat
   owner: ethevenot
   tool_panel_section_id: 'data_handling_ALL'
   revisions:
     - 'b6a6b4cc932a' # v2.0.4
+  github:
+      repos: https://github.com/workflow4metabolomics/checkformat
+      prod: v3.0.0
+      dev: master
+  xml: checkformat_config.xml
 
 
 # label_contribution
