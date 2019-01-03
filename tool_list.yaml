@@ -14,11 +14,21 @@ tools:
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - 'fd809bde6aec' # v2.4.0.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 3.0.0
+      dev: dev
+  xml: tools/msnbase_readmsdata/msnbase_readmsdata.xml
 - name: xcms_plot_chromatogram
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
   revisions:
     - 'caf45efb34bf' # v3.0.0.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 3.0.0
+      dev: dev
+  xml: tools/xcms_plot_chromatogram/xcms_plot_chromatogram.xml
 - name: xcms_xcmsset
   owner: lecorguille
   tool_panel_section_id: 'preprocessing_LCMS'
@@ -26,7 +36,7 @@ tools:
     - '41cf6f56d1b6' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 2.1.0
+      prod: 3.0.0
       dev: dev
   xml: tools/xcms_xcmsset/abims_xcms_xcmsSet.xml
 - name: xcms_merge
@@ -36,7 +46,7 @@ tools:
     - 'a9d451591d7b' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 2.1.0
+      prod: 3.0.0
       dev: dev
   xml: tools/xcms_merge/xcms_merge.xml
 - name: xcms_group
@@ -46,7 +56,7 @@ tools:
     - '7a19925478e8' # v3.0.0.1
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 2.1.0
+      prod: 3.0.0
       dev: dev
   xml: tools/xcms_group/abims_xcms_group.xml
 - name: xcms_retcor
@@ -56,7 +66,7 @@ tools:
     - 'e95f0dcdea3b' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 2.1.0
+      prod: 3.0.0
       dev: dev
   xml: tools/xcms_retcor/abims_xcms_retcor.xml
 - name: xcms_fillpeaks
@@ -66,7 +76,7 @@ tools:
     - 'b6b62413936f' # v3.0.0.2
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 2.1.0
+      prod: 3.0.0
       dev: dev
   xml: tools/xcms_fillpeaks/abims_xcms_fillPeaks.xml
 - name: camera_annotate
@@ -76,7 +86,7 @@ tools:
     - '73d82de36369' # v2.2.4
   github:
       repos: https://github.com/workflow4metabolomics/camera
-      prod: 2.2.0
+      prod: 2.2.0 # No tag for v2.2.4
       dev: dev
   xml: galaxy/camera_annotate/abims_CAMERA_annotateDiffreport.xml
 - name: xcms_summary
@@ -86,7 +96,7 @@ tools:
     - '0cc47a5ebca9' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 2.1.0
+      prod: 3.0.0
       dev: dev
   xml: tools/xcms_summary/abims_xcms_summary.xml
 - name: camera_combinexsannos
@@ -96,7 +106,7 @@ tools:
     - '961089e21ae2' # v2.2.2
   github:
       repos: https://github.com/workflow4metabolomics/camera
-      prod: 2.2.0
+      prod: 2.2.0 # No tag for v2.2.2
       dev: dev
   xml: galaxy/camera_combinexsannos/abims_CAMERA_combinexsAnnos.xml
 
@@ -120,7 +130,7 @@ tools:
     - 'c75532b75ba1' # v2.1.1
   github:
       repos: https://github.com/workflow4metabolomics/metaMS
-      prod: master
+      prod: master # No tag for v2.1.1
       dev: dev
   xml: galaxy/metaMS/metams_runGC.xml
 
@@ -132,7 +142,7 @@ tools:
     - '5b06800f3449' # v3.3.0
   github:
       repos: https://github.com/workflow4metabolomics/nmr_preprocessing
-      prod: master
+      prod: master # No tag for v3.3.0
       dev: dev
   xml: galaxy/nmr_preprocessing/NmrPreprocessing_xml.xml
 - name: nmr_alignment
@@ -142,7 +152,7 @@ tools:
     - '265ee538e120' # v2.0.4
   github:
       repos: https://github.com/workflow4metabolomics/nmr_alignment
-      prod: master
+      prod: master # No tag for v2.0.4
       dev: dev
   xml: galaxy/nmr_alignement/NmrAlignment_xml.xml
 - name: nmr_bucketing
@@ -152,7 +162,7 @@ tools:
     - '4d5c06b46c2f' # v2.0.3
   github:
       repos: https://github.com/workflow4metabolomics/nmr_bucketing
-      prod: 2.0.2
+      prod: 2.0.2 # No tag for v2.0.3
       dev: dev
   xml: galaxy/nmr_bucketing/NmrBucketing_xml.xml
 
@@ -314,8 +324,8 @@ tools:
     - 'fb9c0409d85c' # v3.3.1
   github:
       repos: https://github.com/workflow4metabolomics/lcmsmatching
-      prod: master
-      dev: develop
+      prod: v4.0.0a
+      dev: master
   xml: lcmsmatching.xml
 
 ## LCMS
