@@ -215,6 +215,7 @@ tools:
   tool_panel_section_id: 'normalization_quality_control_ALL'
   revisions:
     - '5086ad0c0992' # v0.5.0
+      # XXX Where is the GitHub repository of this tool?
 
 # label_statistics
 ## ALL
@@ -253,11 +254,21 @@ tools:
   tool_panel_section_id: 'statistics_ALL'
   revisions:
     - '1422de181204' # v1.0.0
+  github:
+      repos: https://github.com/workflow4metabolomics/mixmodel4repeated_measures
+      prod: master # No tag v1.0.0
+      dev: dev
+  xml: mixmodel4repeated_measures/mixmodel.xml
 - name: asca
   owner: marie-tremblay-metatoul
   tool_panel_section_id: 'statistics_ALL'
   revisions:
     - '93312041f1d5' # v1.0.0
+  github:
+      repos: https://github.com/workflow4metabolomics/ascaw4m
+      prod: master # No tag v1.0.0
+      dev: dev
+  xml: galaxy/asca_w4m/asca_xml.xml
 - name: biosigner
   owner: ethevenot
   tool_panel_section_id: 'statistics_ALL'
@@ -297,6 +308,7 @@ tools:
   tool_panel_section_id: 'annotation_LCMS_FIAMS'
   revisions:
     - 'be582bcd6585' # v1.1.3
+      # Where is the GitHub repository for this tool?
 - name: lipidmaps_textsearch
   owner: fgiacomoni
   tool_panel_section_id: 'annotation_LCMS_FIAMS'
@@ -348,7 +360,7 @@ tools:
     - '28d579fa1718' # v2018-10-01
   github:
       repos: https://github.com/workflow4metabolomics/tool-bank-golm-lib_search
-      prod: release_2016-12-05
+      prod: release_2016-12-05 # No tag v2018-10-01
       dev: dev_fg
   xml: golm_ws_lib_search.xml
 
@@ -358,7 +370,11 @@ tools:
   tool_panel_section_id: 'preprocessing_NMR'
   revisions:
     - '0ff2d9211ebe' # v3.0.0
-
+  github:
+      repos: https://github.com/workflow4metabolomics/nmr_annotation
+      prod: master # No tag v3.0.0
+      dev: dev
+  xml: galaxy/nmr_annotation/asics_xml.xml
 
 # label_data_handling
 ## ALL
@@ -367,6 +383,11 @@ tools:
   tool_panel_section_id: 'data_handling_ALL'
   revisions:
     - '10f7b1548200' # v3.0.0.0
+  github:
+      repos: https://github.com/workflow4metabolomics/xcms
+      prod: 3.0.0
+      dev: dev
+  xml: tools/xcms_export_samplemetadata/xcms_export_samplemetadata.xml
 
 - name: generic_filter
   owner: melpetera
@@ -385,7 +406,7 @@ tools:
     - '902ab790fb7b' # v1.0.1
   github:
       repos: https://github.com/workflow4metabolomics/tool-table_merge
-      prod: release_2016.09.27
+      prod: release_2016.09.27 # No tag v1.0.1
       dev: master
   xml: tablemerge.xml
 - name: checkformat
@@ -407,3 +428,8 @@ tools:
   tool_panel_section_id: 'contribution_ALL'
   revisions:
     - '9f5c0e23c205' # v0.98.11
+  github:
+      repos: https://github.com/HegemanLab/w4mclassfilter_galaxy_wrapper
+      prod: v0.98.11
+      dev: master
+  xml: tools/w4mclassfilter/w4mclassfilter.xml
