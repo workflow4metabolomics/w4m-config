@@ -339,6 +339,7 @@ tools:
       prod: v4.0.0a
       dev: master
   xml: lcmsmatching.xml
+  html_output: true
 
 ## LCMS
 - name: probmetab
