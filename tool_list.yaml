@@ -336,7 +336,7 @@ tools:
     - 'fb9c0409d85c' # v3.3.1
   github:
       repos: https://github.com/workflow4metabolomics/lcmsmatching
-      prod: v4.0.0a
+      prod: v4.0.0
       dev: master
   xml: lcmsmatching.xml
   html_output: true
