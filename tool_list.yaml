@@ -16,7 +16,7 @@ tools:
     - 'fd809bde6aec' # v2.4.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/msnbase_readmsdata/msnbase_readmsdata.xml
 - name: xcms_plot_chromatogram
@@ -26,7 +26,7 @@ tools:
     - 'caf45efb34bf' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_plot_chromatogram/xcms_plot_chromatogram.xml
 - name: xcms_xcmsset
@@ -36,7 +36,7 @@ tools:
     - '41cf6f56d1b6' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_xcmsset/abims_xcms_xcmsSet.xml
 - name: xcms_merge
@@ -46,7 +46,7 @@ tools:
     - 'a9d451591d7b' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_merge/xcms_merge.xml
 - name: xcms_group
@@ -56,7 +56,7 @@ tools:
     - '7a19925478e8' # v3.0.0.1
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_group/abims_xcms_group.xml
 - name: xcms_retcor
@@ -66,7 +66,7 @@ tools:
     - 'e95f0dcdea3b' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_retcor/abims_xcms_retcor.xml
 - name: xcms_fillpeaks
@@ -76,7 +76,7 @@ tools:
     - 'b6b62413936f' # v3.0.0.2
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_fillpeaks/abims_xcms_fillPeaks.xml
 - name: camera_annotate
@@ -96,7 +96,7 @@ tools:
     - '0cc47a5ebca9' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_summary/abims_xcms_summary.xml
 - name: camera_combinexsannos
@@ -386,7 +386,7 @@ tools:
     - '10f7b1548200' # v3.0.0.0
   github:
       repos: https://github.com/workflow4metabolomics/xcms
-      prod: 3.0.0
+      prod: v3.4.4
       dev: dev
   xml: tools/xcms_export_samplemetadata/xcms_export_samplemetadata.xml
 
