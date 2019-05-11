@@ -7,6 +7,16 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+# MS2
+- name: mineMS2
+  owner: adelabriere
+  tool_panel_section_id: 'annotation_MS2'
+  github:
+      repos: https://github.com/workflow4metabolomics/mineMS2
+      prod: master
+      dev: fix_tool_integration
+  xml: mineMS2_config.xml
+    
 # label_preprocessing
 ## LCMS
 - name: msnbase_readmsdata

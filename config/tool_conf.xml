@@ -22,6 +22,7 @@
   <section id="annotation_LCMS" name="LCMS" version="" />
   <section id="annotation_GCMS" name="GCMS" version="" />
   <section id="annotation_NMR" name="NMR" version="" />
+  <section id="annotation_MS2" name="MS2" version="" />
 
   <label id="label_data_handling" text="DATA HANDLING" />
   <section id="data_handling_ALL" name="ALL" version="" />
