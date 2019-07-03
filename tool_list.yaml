@@ -3,7 +3,7 @@
 api_key: admin
 galaxy_instance: http://127.0.0.1:8080/
 install_repository_dependencies: true
-install_resolver_dependencies: false
+install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
@@ -74,7 +74,7 @@ tools:
   revisions:
     - '10824185547' # v3.0.0
 - name: metams_plot
-  owner: yguitton
+  owner: workflow4metabolomics
   tool_panel_section_id: 'preprocessing_GCMS'
   revisions:
     - 'b60dc620bd14' # v1.0.0
