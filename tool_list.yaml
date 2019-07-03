@@ -137,7 +137,7 @@ tools:
   owner: ethevenot
   tool_panel_section_id: 'statistics_ALL'
   revisions:
-    - '526f8258e8a' # v2.3.10
+    - '5526f8258e8a' # v2.3.10
 - name: anova
   owner: lecorguille
   tool_panel_section_id: 'statistics_ALL'
