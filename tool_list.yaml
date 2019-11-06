@@ -140,6 +140,8 @@ tools:
     - 'b60dc620bd14' # v1.0.0
   github:
       repos: https://github.com/workflow4metabolomics/metaMS
+      prod: master
+      dev: master
   xml: tools/metaMS_plot/metams_plot.xml
 
 ## NMR
